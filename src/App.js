@@ -6,7 +6,7 @@ import Run2 from './assets/images/run.png';
 
 const App = () => {
   const [allWordsText, setAllWordsText] = useState(
-    'Always I will love my passion, Be happy be bright be happy. If no think you can, Then you  have to. I have no special talents but I am only passionately curious. focus on your future otherwise you will find life becomes a blue. Always do small things with great love. life is change. growth is optional. Just believe in yourself. even if you don’t, pretend that you do and at some point you will. choose wisely, to be successful, you have to have heart in your business, and your business in your heart. be strong because things will wet better. it may be stormy now, but it never rains forever.'
+    'Always I will love my passion, Be happy be bright be happy. If no think you can, Then you have to. I have no special talents but I am only passionately curious. focus on your future otherwise you will find life becomes a blue. Always do small things with great love. life is change. growth is optional. Just believe in yourself. even if you don’t, pretend that you do and at some point you will. choose wisely, to be successful, you have to have heart in your business, and your business in your heart. be strong because things will wet better. it may be stormy now, but it never rains forever.'
   );
 
   const words = allWordsText.split(' ');
