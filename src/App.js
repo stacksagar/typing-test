@@ -290,7 +290,7 @@ const App = () => {
             type="text"
             placeholder="Start Typing...."
             onChange={(e) => processInput(e.target.value)} 
-            value={ timer > 59 ? 'Your Speed is ('+correctWords.filter(Boolean).length+') WPM' : input }
+            value={ timer > 59 ? 'Your Speed is ( "'+correctWords.filter(Boolean).length+'" Word Per Minute )' : input }
             disabled={timer > 59}
           />
         </div>
