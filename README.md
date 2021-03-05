@@ -11,11 +11,12 @@
 [linkedin-url]: https://linkedin.com/in/stacksagar 
 
 <!-- PROJECT LOGO -->
-<br />
-<p align="**center**">
+<br /> 
   <h3 align="center"><a href="https://stacksagar.github.io/typing-test"> Typing (Test & Practice) with (React.js & Tailwindcss)</a></h3>
 
-<img src="https://i.ibb.co/ts7G7VS/Typing-test-practice-with-reactjs-stacksagar.png" alt="Typing-test-practice-with-reactjs-stacksagar" border="0">
+<a href="https://stacksagar.github.io/typing-test">
+ <img src="https://i.ibb.co/ts7G7VS/Typing-test-practice-with-reactjs-stacksagar.png" alt="Typing-test-practice-with-reactjs-stacksagar" border="0">
+</a>
 
 <!-- HOW TO RUN -->
 
