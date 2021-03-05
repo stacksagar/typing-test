@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Loading from './assets/images/loading.gif';
 import Typing from './assets/images/typing.jpg';
 import Run from './assets/images/run.gif';
+import Run2 from './assets/images/run.png';
 
 const App = () => {
   const [allWordsText, setAllWordsText] = useState(
@@ -48,20 +49,18 @@ const App = () => {
       interval = setInterval(() => {
         setTimer((prev) => prev + 1);
         setTimer2((prev) => prev - 1);
-        setIsRun(true)
       }, 1000);
     }
     return () => clearInterval(interval);
   }, [startTimer]);
 
   const processInput = (value) => {
+    setIsRun(true)
     setStartTimer(true);  
     if  (value.endsWith(' ')) { 
- 
       if (value.trim() === words[currentWordIndex]) {
         setCorrectWordsChars(prev=>prev+value.trim().length) 
       }
-
       setCurrentWordIndex((prevIndex) => prevIndex + 1);
       setCorrectWords((prevData) => {
         const newData = [...prevData];
@@ -103,7 +102,7 @@ const App = () => {
 
       <img style={{zIndex:'-1'}} src={Typing} className={`w-full h-full absolute top-0 left-0`} alt="keyboard"/> 
       
-      <img className={`${isRun ? 'startRun':'stopRun'} runGif ${timer > 59 ? 'opacity-0' : ' opacity-100'}`} src={Run} alt="run" />
+      <img className={`${isRun ? 'startRun':'stopRun'} runGif ${timer > 59 ? 'opacity-0' : ' opacity-100'}`} src={isRun ? Run : Run2} alt="run" />
 
       <div className={` ${timer > 59 ? 'opacity-0' : ' opacity-100'}
        w-32 h-32 rounded-full bg-gray-900 absolute bottom-0 left-0 right-0 m-auto flex flex-col items-center justify-center shadow-lg`}>
