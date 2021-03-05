@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+  margin: 0px;
+  transition: all 0.3s;
+  font-family: Ubuntu, Operator Mono !important ;
+  color: #ffffff;
+  transition: all 0.5s;
+}
+
+/* Default Scroll Hide  */
+
+html {
+  scrollbar-color: #11111199 transparent !important;
+  scrollbar-width: thin !important;
+}
+
+::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: #11111199 !important;
+}
+
+div {
+  scrollbar-color: transparent transparent !important;
+  scrollbar-width: thin !important;
+}
+div:hover {
+  scrollbar-color: #11111199 transparent !important;
+  scrollbar-width: thin !important;
+}
+
+div::-webkit-scrollbar {
+  width: 8px !important;
+}
+
+div::-webkit-scrollbar-track {
+  background: transparent !important;
+}
+
+div::-webkit-scrollbar-thumb {
+  background: transparent !important;
+  border-radius: 10px;
+}
+div:hover::-webkit-scrollbar-thumb {
+  background: #11111199 !important;
+}
+/* Default Scroll Hide  */
+
+/*! Start css code write from here */
+
+body {
+  background: #666;
+  color: #ddd;
+}
+.mainSection {
+  color: #ddd;
+  width: 100%;
+  height: 100vh;
+}
+.darkmode {
+  background: #000000c7;
+  z-index: 1;
+}
+.daymode {
+  background: #ffffff9f;
+}
+.active {
+  display: inline-block;
+  padding-bottom: 1px;
+  border-bottom: 1.5px solid orange;
+  color: orange;
+}
+
+.againRefresh {
+  display: block;
+  animation-name: rotate;
+  animation-iteration-count: infinite;
+  animation-duration: 1s;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.typingAniShow {
+  opacity: 1;
+  transition: all 3s;
+}
+.typingAniHide {
+  opacity: 0;
+  transition: all 3s;
+}
+
+.runGif {
+  width: 80px;
+  position: absolute;
+  bottom: 1px;
+  z-index: 99;
+  transition: left 60s;
+}
+.startRun {
+  left: 37%;
+  transition: left 60s;
+}
+.stopRun { 
+  left: 1%;
+  transition: left 0s;
+}
