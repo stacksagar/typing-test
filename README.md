@@ -1,19 +1,10 @@
-```JSX
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+```JAVASCRIPT
+// this is test function 
 
-class Child extends Component {
-  render() {
-    return (
-        <p className="App-intro">
-          I'm a childish component
-        </p>
-    );
-  }
+function getPercentage(a,b) {
+return (a/100) * b
 }
 
-export default Child;
 ```
 
 ### Connect
