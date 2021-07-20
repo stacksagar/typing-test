@@ -1,12 +1,3 @@
-```JAVASCRIPT
-// this is test function 
-
-function getPercentage(a,b) {
-return (a/100) * b
-}
-
-```
-
 ### Connect
 
 [![Facebook][facebook-shield]][facebook-url] [![twitter][twitter-shield]][twitter-url] [![LinkedIn][linkedin-shield]][linkedin-url]
